@@ -1,0 +1,500 @@
+/*
+==================================
+                Google Fonts
+==================================
+*/
+/* font-family: 'Sacramento', cursive; */
+@import url('https://fonts.googleapis.com/css?family=Sacramento&display=swap');
+/* font-family: 'Vollkorn', serif; */
+@import url('https://fonts.googleapis.com/css?family=Vollkorn:400,600,700&display=swap');
+/* font-family: 'Arizonia', cursive;*/
+@import url('https://fonts.googleapis.com/css?family=Arizonia&display=swap');
+
+/*
+==================================
+                Generic css
+==================================
+*/
+/* generic link btn */
+a:hover{
+    text-decoration: none;
+}
+.generic-btn{
+    display: inline-block;
+    padding:10px 20px;
+    background-image: linear-gradient(to right,#abaaff,#fab9f9);
+    border-radius: 20px;
+}
+.gradient-background{
+    background-image: linear-gradient(to right,#abaaff,#fab9f9);
+}
+a.generic-btn{
+    color: #fff;
+}
+/* generic title */
+.generic-title{
+    text-align: center;
+}
+.generic-title p{
+    font-family: 'Sacramento', cursive;
+    font-size: 45px;
+}
+.generic-title h3{
+    font-family: 'Vollkorn', serif;
+    text-transform: capitalize;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.generic-title h3::after{
+    content:"";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5rem;
+    width: 10rem;
+    height: 5px;
+    background-image: linear-gradient(to right,#abaaff,#fab9f9);
+}
+.generic-title h3::before{
+    content: "";
+    position: absolute;
+    top: 78%;
+    left: 50%;
+    margin-left: -12.5px;
+    width: 25px;
+    height: 25px;
+    background-image: linear-gradient(to right,#abaaff,#fab9f9);
+    clip-path: polygon(0 50%,50% 0,100% 50%,50% 100%,0 50%);
+}
+
+
+
+
+
+
+
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+body{
+    font-family: 'Vollkorn', serif;
+}
+/*
+==================================
+                Menu
+==================================
+*/
+/* topbar */
+.topbar{
+    background-image: linear-gradient(#abaaff,#fab9f8);
+    text-transform: uppercase;
+    color: #Fff;
+}
+.topbar .container .row{
+    padding-top: 15px;
+}
+.email{
+    padding-right: 20px;
+}
+.topbar ul{
+    display: block;
+    text-align: center;
+}
+.topbar ul li{
+    display: inline-block;
+    list-style-type: none;
+    padding-left: 15px;padding-right: 15px;
+    margin-left: 5px;margin-right: 5px;
+}
+.topbar ul li a{
+    color: #fff;
+}
+/* menu */
+ul.menu{
+    text-align: center;
+}
+ul.menu li:hover{
+    background-image: linear-gradient(#abaaff,#fab9f8);
+    border-radius: 25px;
+}
+ul.menu li a:hover{
+    color: #fff;
+}
+.responsive-toggler{
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 25px;
+    display: none;
+}
+
+.fa-bars,.fa-times{
+    background-image: linear-gradient(#abaaff,#fab9f8);
+    color:#fff;
+    padding: 10px;
+}
+ul.menu li{
+    display: inline-block;
+    list-style-type: none;
+    padding-left: 5px;padding-right: 5px;
+    padding-top: 5px;
+    transition: 1s linear;
+}
+h2.logo{
+    text-transform: capitalize;
+}
+ul.menu li a{
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+section.menu-area{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+/* header slider */
+.header-slider{
+    background-color: #f5f5f9;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.header-slider a{
+    text-transform: uppercase;
+    color: #fff;
+}
+.header-slider-content{
+    text-align: center;
+}
+.header-slider-content p:first-child{
+    font-family: 'Sacramento', cursive;
+    font-size: 30px;
+}
+.header-slider-content h2{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.header-slider span{
+    background-color: #c1bfda;
+}
+
+
+/*
+==================================
+            Service Section
+==================================
+*/
+/* service content */
+.service-content{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+.service-content h5{
+    margin-top: 40px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+}
+.service-content p{
+    text-align: center;
+    color: #777;
+    text-transform: capitalize;
+}
+/* service carousel */
+.services img{
+    border-radius: 50%;
+    border:10px solid #f0f0f0;
+    transition: .5s;
+    position: relative;
+}
+.services img:hover{
+    border:10px solid #f3c6f1;
+}
+a.service-btn{
+    position: absolute;
+    top:35%;
+    opacity: 0;
+    left: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    transition: .5s;
+    left: 50%;
+}
+a.service-btn:hover{
+    opacity: 1;
+}
+.service-item p{
+    text-transform: capitalize;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 0;
+}
+.service-item small{
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    color: #f50df5;
+}
+
+
+/*
+==================================
+    Choose Service Section
+==================================
+*/
+.choosen-service{
+    background-color: #f5f5f9;
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+.choosen-service-desc img{
+    width: 70%;
+    border-radius: 5px;
+    box-shadow: 15px 15px 15px rgba(0,0,0,0.04);
+}
+.choosen-service-desc h5{
+    text-transform: capitalize;
+}
+.choosen-service-desc small{
+    text-transform: capitalize;
+    word-spacing: 3px;
+    display: block;
+    color: #777;
+}
+i.fa-check{
+    color: #f9cbf9;
+}
+
+/* count services */
+
+ul.service-count{
+    list-style-type: none;
+    text-transform: uppercase;
+}
+ul.service-count li{
+    display: inline-block;
+}
+ul.service-count li span{
+    display: block;
+    text-align: center;
+    margin-right: 20px;
+}
+ul.service-count li span:first-child{
+    font-family: 'Sacramento', cursive;
+    font-size:25px;
+    font-weight: 600;
+    color: #f9cbf9;
+}
+ul.service-count li span:last-child{
+    color: #777;
+}
+
+/*
+==================================
+        Membarship Section
+==================================
+*/
+.membarship{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.membarship-item img{
+    padding-top: 10px;
+    width: 90%;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+}
+.membarship-item{
+    width: 80%;
+    margin:auto;
+    text-align: center;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    background-color: #f5f5f9;
+}
+.membarship-item:hover{
+    background-image: linear-gradient(#abaaff,#fab9f8);
+}
+
+.membarship-content h5{
+    font-size: 30px;
+    font-weight: 600;
+    padding-top: 30px;
+    text-transform: uppercase;
+}
+.membarship-content span.counter{
+    display: block;
+    font-size: 30px;
+    color: #f9cbf9;
+}
+.membarship-content i{
+    padding-right: 5px;
+}
+.membarship-content small{
+    display: block;
+    text-transform: capitalize;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/*
+==================================
+        Gellary Carousel
+==================================
+*/
+
+.gellary-item{
+    position: relative;
+    z-index:0;
+}
+.gellary-hover-background{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(#abaaff,#fab9f8);
+    z-index: -1;
+    transition: .5s;
+    opacity: 0;
+}
+.gellary-item .gellary-img-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    visibility: hidden;
+
+}
+.gellary-item:hover .gellary-img-content{
+    visibility: visible;
+    z-index: 3;
+}
+.gellary-item:hover .gellary-hover-background{
+    z-index: 2;
+    opacity: 1;
+}
+
+/*
+==================================
+        Learning section
+==================================
+*/
+.learning-image{
+    width: 60%;
+    margin:auto;
+}
+.learning-image img{
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.04);
+}
+
+/*
+==================================
+        Review section
+==================================
+*/
+.review{
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    background-color: #f5f5f9;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    box-shadow: 15px 0px 45px #fac0f941;
+}
+.student-review{
+    width: 75%;
+    margin: auto;
+    position: relative;
+    padding-top: 75px;
+}
+.student-review::after{
+    content: " \201C";
+    color: #fac0f9;
+    font-size: 90px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+}
+.student-review p{
+    line-height: 1.8;
+    font-size: 14px;
+}
+.student-name{
+    color: #f50df5;
+}
+/*
+==================================
+        Teacher Profile
+==================================
+*/
+.teacher-profile-single-item{
+    border:2px solid rgba(0,0,0,0.08);
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.04);
+}
+small.teacher-catagory{
+    color: #f50df5;
+}
+/*
+==================================
+        Footer
+==================================
+*/
+.main-footer{
+    background-color: #f5f5f9;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.skullcoach-footer-brand{
+    font-weight: 500;
+    font-family: 'Arizonia', cursive;
+    font-size: 32px;
+    text-align: center;
+}
+ul.footer-social-icons{
+    list-style: none;
+    text-align: center;
+}
+p.skullcoach-footer-brand{
+    margin-bottom: 0px;
+}
+ul.footer-social-icons li{
+    display: inline-block;
+    padding:5px;
+    width: 30px;
+    height: 30px;
+    background-image: linear-gradient(#abaaff,#fab9f8);
+    border-radius: 50%;
+}
+ul.footer-social-icons li a{
+    color: #fff;
+}
+.search-footer{
+    width: 60%;
+    float: left;
+    border:none;
+    background-color: #e7e7f2;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    padding-top: 4.5px;
+    padding-bottom:4.5px;
+    margin-top: 15px;
+}
+p.subscribe{
+    width: 40%;
+    float: left;
+    color: #fff;
+    background-image: linear-gradient(#abaaff,#fab9f8);
+    padding:4.5px 15px;
+    text-align: center;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    margin-top: 15px;
+}
+.bottom-footer{
+    background-color: #e7e7f2;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
